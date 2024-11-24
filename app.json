@@ -1,4 +1,7 @@
 {
   "name": "krshi_sathi_1_0",
-  "displayName": "कृषि साथी"
+  "displayName": "कृषि साथी",
+  "react-native-google-mobile-ads": {
+    "android_app_id": "ca-app-pub-8162348824147342~8807370443"
+  }
 }

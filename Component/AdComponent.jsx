@@ -1,10 +1,16 @@
-import React from 'react';
+import React, { useEffect,useRef } from 'react';
 import {View, Text, StyleSheet} from 'react-native';
+import { BannerAd, BannerAdSize, TestIds, useForeground } from 'react-native-google-mobile-ads';
 
+const adUnitId = __DEV__ ? TestIds.ADAPTIVE_BANNER : 'ca-app-pub-xxxxxxxxxxxxx/yyyyyyyyyyyyyy';
 const AdComponent = () => {
+  const bannerRef = useRef(null);
+  useForeground(() => {
+    Platform.OS === 'ios' && bannerRef.current?.load();
+  })
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>AD Of Company text image</Text>
+      <BannerAd ref={bannerRef} unitId={adUnitId} size={BannerAdSize.ANCHORED_ADAPTIVE_BANNER} />
     </View>
   );
 };

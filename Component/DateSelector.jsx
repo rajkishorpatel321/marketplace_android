@@ -104,11 +104,24 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   closeButton: {
+    width: 25,
+    height: 25,
+    borderRadius: 20,
+    backgroundColor: '#ff1a1a',
+    justifyContent: 'center',
+    alignItems: 'center',
     alignSelf: 'flex-end',
+    elevation: 5, // For shadow on Android
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.3,
+    shadowRadius: 4,
   },
   closeText: {
-    color: 'black',
-    fontSize: 16,
+    color: 'white',
+    fontSize: 20,
+    fontWeight: 'bold',
+    textAlign: 'center',
   },
   closeCalendarButton: {
     marginTop: 10,
@@ -118,5 +131,6 @@ const styles = StyleSheet.create({
     textAlign: 'center',
   },
 });
+
 
 export default DateSelector;

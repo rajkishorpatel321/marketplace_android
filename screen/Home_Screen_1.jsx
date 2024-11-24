@@ -33,7 +33,7 @@ const Home_Screen_1 = ({onSelectCrop,onSelectMarketPlace}) => {
     if (isLoading || !cropData || !marketplaceData) {
         return (
         <View >
-            <LoadingScreen />
+            <LoadingScreen /> 
         </View>
         );
       }
@@ -43,9 +43,6 @@ const Home_Screen_1 = ({onSelectCrop,onSelectMarketPlace}) => {
             <CardContainer onSelectCrop={onSelectCrop} data={cropData}/>
             <Heading title={'मंडी के अनुसार मूल्य'} />
             <MarketPlaceCardContainer onSelectMarketPlace={onSelectMarketPlace} data={marketplaceData} />
-            <View style={styles.needTo}>
-
-            </View>
         </ScrollView>
     )
 }
@@ -57,9 +54,6 @@ const styles = StyleSheet.create({
       marginTop: 10,
       fontSize: 16,
       color: "gray",
-    },
-    needTo:{
-        marginBottom:110,
     }
   });
 export default Home_Screen_1;

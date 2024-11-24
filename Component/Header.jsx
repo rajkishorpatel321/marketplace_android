@@ -19,15 +19,14 @@ export default Header;
 
 const styles = StyleSheet.create({
   safeArea: {
-    backgroundColor: '#8E4CFF', // Header background color for safe area blending
+    backgroundColor: '#4CAF50', // Header background color for safe area blending
   },
   headerContainer: {
     flexDirection: 'row', // Row layout for logo and title
     alignItems: 'center',
-    backgroundColor: '#6200EE', // Primary header color
+    backgroundColor: '#8E4CFF', // Primary header color
     borderRadius: 8, // Smooth corners for a refined look
-    marginHorizontal: 10, // Space on sides
-    marginTop: 5, // Space from top
+    // marginHorizontal: 10, // Space on sides
     marginBottom: 5, // Space from bottom
     paddingVertical: 10, // Vertical padding for header height
     paddingHorizontal: 10, // Horizontal padding for inner spacing
