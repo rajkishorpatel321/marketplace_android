@@ -7,7 +7,7 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:198694630452:android:4462b13c6a95aaa5728661",
+        "mobilesdk_app_id": "please enter mob id",
         "android_client_info": {
           "package_name": "com.krshi_sathi_1_0"
         }
@@ -15,7 +15,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyDIQ5yGaA9EfvvdZqzcVNUUE_Cf7C0UMwo"
+          "current_key": "please enter key"
         }
       ],
       "services": {
